@@ -251,7 +251,106 @@ body{
     margin: 30px 0;
 }
 
+#merchan-info{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.merchan-header, .merchan-text, .merchan-buttons{
+    width: 80%;
+    height: auto;
+    align-items: center;
+    margin: 15px;
+}
+.merchan-header h2{
+    width: 100%;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #333;
+}
 
+.merchan-text p{
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #222;
+}
+
+.merchan-buttons #encontre-seu-relogio{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(20, 109, 44);
+    border: 1px solid rgb(22, 109, 44);
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-right: 20px;
+    transition: background-color ease .5s,
+    color ease .5s;
+}
+.merchan-buttons #encontre-seu-relogio:active{
+    color: rgb(22, 109, 44);
+}
+.merchan-buttons #encontre-seu-relogio:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(22, 109, 44);
+}
+
+.merchan-buttons #configurar{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(34, 131, 60);
+    transition: opacity ease .4s;
+}
+.merchan-buttons #configurar:hover{
+    opacity: .7;
+}
+
+
+#relogios{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    overflow: hidden;
+}
+#relogios h3{
+    font-size: 1.4em;
+    margin: 20px;
+    color: #333;
+}
+#relogios .produtos{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+    overflow: hidden;
+}
+.produtos li{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.produtos li img{
+    max-width: 100%;
+    height: auto;
+}
 
 
 @media only screen and (max-width: 980px){
@@ -274,6 +373,12 @@ body{
     .header-logo{
         justify-self: flex-end;
     }
+    .merchan-header, .merchan-text, .merchan-buttons{
+        width: 90%;
+    }
+    .merchan-header h2{
+        font-size: 2em;
+    }
 }
 @media only screen and (max-width: 650px){
     #header{
@@ -293,6 +398,16 @@ body{
     }
     .header-logo{
         justify-self: flex-end;
+    }
+    .merchan-header h2{
+        font-size: 1.2em;
+    }
+    .merchan-text p{
+        font-size: 1.1em;
+    }
+    .merchan-buttons #encontre-seu-relogio{
+        padding: 5px 10px;
+        margin-right: 10px;
     }
 }
 
